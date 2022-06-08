@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+audio {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/Sday.jpg),
+    linear-gradient(to bottom, black, #1e1e1e);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+}
+
+body.animate {
+  animation: fade 1s ease-out;
+}
+@keyframes fade {
+  from {
+    background-size: 150% 150%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.container {
+  color: white;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  line-height: 1.5;
+  transform: translateY(-25%);
+}
+.inputs {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.location {
+  font-family: "Cairo", sans-serif;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.658);
+  cursor: pointer;
+  margin: 0 0 1rem 0;
+}
+.search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.466);
+  font-size: 1.2rem;
+  color: white;
+}
+.search-button {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+.search-button:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.infos {
+  font-size: 1.4rem;
+  font-family: "Cairo", sans-serif;
+}
+.des-icon {
+  display: flex;
+  align-items: center;
+}
+.des-icon img {
+  width: 2.5rem;
+}
+.temp {
+  font-size: 1.9rem;
+  margin: 0.5rem 0;
+}
+.description,
+.humidity,
+.windSpeed {
+  font-size: 1rem;
+}
+
+.credit {
+  position: absolute;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  background-image: linear-gradient(to bottom right, #f9f9f95e, #e3e3e321);
+  border-radius: 0.5rem;
+}

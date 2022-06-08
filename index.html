@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/cloud.svg">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input class="search-input" type="text" placeholder="Search">
+            <i class="search-button fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            Weather in your location (not precise)
+        </div>
+        <div class="infos">
+            <div class="name"></div>
+            <div class="temp"></div>
+            <div class="des-icon">
+                <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="">
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="windSpeed"></div>
+        </div>
+    </div>
+    <audio src="./audios/RainSound.mp3" id="rain"></audio>
+    <audio src="./audios/SunnyDaySound.mp3" id="sunny"></audio>
+    <div class="credit">Made By Jacer</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
