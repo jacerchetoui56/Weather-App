@@ -1,5 +1,3 @@
-import api_key from 'api.js'
-
 let search = document.querySelector('.search-input')
 let searchBtn = document.querySelector('.search-button')
 let cityName = document.querySelector('.name')
