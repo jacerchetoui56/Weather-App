@@ -14,9 +14,7 @@ let sunnyDaySound = document.querySelector('#sunny')
 async function getWeather(city = "tunisia") { //the city is tunisia by default
     let response = null
     if (city != "") {
-        let resApi = await fetch("api.json")
-        let dataApi = await resApi.json()
-        let apiKey = dataApi.api
+
         response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + apiKey)
         let data = await response.json()
         let { name } = data
@@ -47,7 +45,7 @@ function displayInfos(WeatherInfos) {
 }
 
 //!============== Event Listeners ==========
-getWeather().catch(() => document.querySelector('.infos').innerHTML = "Sorry , Not available")
+getWeather()
 locationBtn.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(success, console.log)
 
@@ -122,3 +120,4 @@ function changeBackground(desc = "Sday.jpg") {
         rainSound.play()
     }
 }
+
