@@ -1,3 +1,4 @@
+let apiKey = 'c2c988a6ce4b7c7ff9e658fdac420393';
 let search = document.querySelector('.search-input')
 let searchBtn = document.querySelector('.search-button')
 let cityName = document.querySelector('.name')
